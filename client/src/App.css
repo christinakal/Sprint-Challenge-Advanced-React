@@ -11,6 +11,8 @@
   position: relative;
   width: 40px;
   cursor: pointer;
+  margin-top: 2%;
+  margin-left: 2%;
 }
 
 .toggle {
@@ -36,4 +38,10 @@
 .dark-mode.navbar {
   background-color: #1F2022;
   border: none;
+}
+
+.chart{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5%;
 }

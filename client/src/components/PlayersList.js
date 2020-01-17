@@ -12,7 +12,6 @@ const PlayersList = (props) => {
     };
     return (
         <div>
-            <Chart data={props.players}/>
             <div className="dark-mode__toggle">
                 <div
                     onClick={toggleMode}
@@ -20,6 +19,7 @@ const PlayersList = (props) => {
                 />
             </div>
             <h1>Players Info:</h1>
+            <Chart data={props.players}/>
             {props.players.map(player => (
                 <Player key={player.id} name={player.name} country={player.country}/>
             ))}
