@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import { useDarkMode } from './../hooks/useDarkMode'
 import Player from './Player';
+import Chart from './Chart';
 
 const PlayersList = (props) => {
     const [darkMode, setDarkMode] = useDarkMode(false);
@@ -11,6 +12,7 @@ const PlayersList = (props) => {
     };
     return (
         <div>
+            <Chart data={props.players}/>
             <div className="dark-mode__toggle">
                 <div
                     onClick={toggleMode}
@@ -19,7 +21,7 @@ const PlayersList = (props) => {
             </div>
             <h1>Players Info:</h1>
             {props.players.map(player => (
-                <Player name={player.name} country={player.country}/>
+                <Player key={player.id} name={player.name} country={player.country}/>
             ))}
             
         </div>
