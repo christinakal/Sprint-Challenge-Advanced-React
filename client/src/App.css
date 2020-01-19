@@ -40,8 +40,26 @@
   border: none;
 }
 
+/* CHART COMPONENT */
+
 .chart{
   margin: 0 auto;
   text-align: center;
   padding-top: 5%;
+}
+
+/* PLAYERSLIST COMPONENT */
+
+.players-info{
+  text-align: center;
+}
+
+
+/* PLAYER COMPONENT */
+.player-card-wrapper{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 3%;
+  box-shadow: 7px 7px 10px #aaaaaa;
 }
