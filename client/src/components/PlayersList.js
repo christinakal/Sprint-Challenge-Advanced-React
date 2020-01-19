@@ -13,24 +13,15 @@ const PlayersList = (props) => {
     };
     return (
         <div>
-            {/* <div className="dark-mode__toggle"> */}
-                {/* <div
-                    onClick={toggleMode}
-                    className={darkMode ? 'toggle toggled' : 'toggle'}
-                /> */}
-                 <Switch
-                    // checked={state.checkedA}
-                    onChange={toggleMode}
-                    // value="checkedA"
-                    inputProps={{ 'aria-label': 'secondary checkbox' }}
-                />
-            {/* </div> */}
+            <Switch
+                onChange={toggleMode}
+                inputProps={{ 'aria-label': 'secondary checkbox' }}
+            />
             <h1 className="players-info">Players Info:</h1>
             <Chart data={props.players}/>
             {props.players.map(player => (
                 <Player key={player.id} name={player.name} country={player.country}/>
             ))}
-            
         </div>
     )
 };
