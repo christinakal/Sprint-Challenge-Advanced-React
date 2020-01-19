@@ -29,16 +29,18 @@ const Player = (props) => {
     const bull = <span className={classes.bullet}>•</span>;
 
     return (
-        <Card className={classes.card} variant="outlined">
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    {props.name}
-                </Typography>
-                <Typography variant="body2" component="p">
-                    {props.country}
-                </Typography>
-            </CardContent>
-        </Card>
+        <div className="player-card-wrapper">
+            <Card className={classes.card} variant="outlined">
+                <CardContent>
+                    <Typography variant="h5" component="h2">
+                        {props.name}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        {props.country}
+                    </Typography>
+                </CardContent>
+            </Card>
+        </div>
     )
 }
 
