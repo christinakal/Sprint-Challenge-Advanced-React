@@ -46,6 +46,12 @@
   padding-top: 5%;
 }
 
+/* PLAYERSLIST COMPONENT */
+
+.players-info{
+  text-align: center;
+}
+
 
 /* PLAYER COMPONENT */
 .player-card-wrapper{
